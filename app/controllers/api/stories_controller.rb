@@ -8,7 +8,7 @@ class Api::V1::StoriesController < ApplicationController
     def create 
         story = Story.create(story_params)
 
-        render json: {stroy: StorySerializer.new(story)}
+        render json: {story: StorySerializer.new(story)}
         
     end
 
